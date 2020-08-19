@@ -61,8 +61,8 @@ def send_text(message):
             weather = []
             for item in items:
                 weather.append({
-                    'title': item.find('h1', class_='title title_level_1 header-title__title').text,
-                    't_now': item.find('div', class_='fact__temp-wrap').text
+                    "title": item.find('h1', class_='title title_level_1 header-title__title').text,
+                    "t_now": item.find('div', class_='fact__temp-wrap').text
                 })
             print(weather)
             bot.send_message(message.chat.id, weather)
@@ -74,5 +74,4 @@ def send_text(message):
                 print('Error')
 
         parse()
-
 bot.polling()
