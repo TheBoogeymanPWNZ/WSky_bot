@@ -11,9 +11,11 @@ url = ('https://sinoptik.ua/погода-новосибирск')
 page = requests.get(url).content
 soup = BeautifulSoup(page, 'html.parser')
 
-@bot.message_handler(commands = ['start'])                              
+
+@bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_message(message.chat.id, "Привет, выбери город: ", reply_markup=keyboard1)
+
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
@@ -25,5 +27,6 @@ def send_text(message):
             t_min = el.select('.temperature .min')[0].text
             t_max = el.select('.temperature .max')[0].text
         bot.send_message(message.chat.id, 'сейчас. ' + t_now + ', ' + t_min + ', ' + t_max)
-            
+
+
 bot.polling()
