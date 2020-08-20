@@ -29,19 +29,12 @@ def send_text(message):
             t_now = el.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--feelsLikeTempValue--2icPt')[0].text
         for el in soup_now.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--detailsContainer--2yLtL'):
             t_max_min = el.select('._-_-components-src-molecule-WeatherDetailsListItem-WeatherDetailsListItem--wxData--kK35q')[0].text  
-        for el in soup_now.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--detailsContainer--2yLtL'):
             t_wind = el.select('._-_-components-src-molecule-WeatherDetailsListItem-WeatherDetailsListItem--wxData--kK35q')[1].text         
-        for el in soup_now.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--detailsContainer--2yLtL'):
             t_hum = el.select('._-_-components-src-molecule-WeatherDetailsListItem-WeatherDetailsListItem--wxData--kK35q')[2].text       
-        for el in soup_now.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--detailsContainer--2yLtL'):
             t_dew = el.select('._-_-components-src-molecule-WeatherDetailsListItem-WeatherDetailsListItem--wxData--kK35q')[3].text  
-        for el in soup_now.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--detailsContainer--2yLtL'):
             t_pres = el.select('._-_-components-src-molecule-WeatherDetailsListItem-WeatherDetailsListItem--wxData--kK35q')[4].text
-        for el in soup_now.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--detailsContainer--2yLtL'):
             t_violet = el.select('._-_-components-src-molecule-WeatherDetailsListItem-WeatherDetailsListItem--wxData--kK35q')[5].text
-        for el in soup_now.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--detailsContainer--2yLtL'):
             t_visib = el.select('._-_-components-src-molecule-WeatherDetailsListItem-WeatherDetailsListItem--wxData--kK35q')[6].text    
-        for el in soup_now.select('._-_-components-src-organism-TodayDetailsCard-TodayDetailsCard--detailsContainer--2yLtL'):
             t_moon = el.select('._-_-components-src-molecule-WeatherDetailsListItem-WeatherDetailsListItem--wxData--kK35q')[7].text 
         bot.send_message(message.chat.id, 'Сейчас ' +  t_now + 
         '\n' + 'Макс./Мин.:  ' + t_max_min + '\n' + 'Ветер:  ' + t_wind + 
@@ -55,5 +48,5 @@ def send_text(message):
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[0].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[0].text
             t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[2].text
-            bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + emoji.emojize(' :cloud_with_rain:') + t_rain + ' ' +t_wind) 
+            bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + emoji.emojize(' :cloud_with_rain:') + t_rain + ' ' + t_wind) 
 bot.polling()
