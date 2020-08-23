@@ -80,7 +80,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[1].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[2].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[1].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[6].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[4].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_novo7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[2].text
@@ -94,7 +94,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[3].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[6].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[3].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[12].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[10].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_novo7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[4].text
@@ -108,7 +108,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[5].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[10].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[5].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[18].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[16].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_novo7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[6].text
@@ -147,7 +147,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[1].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[2].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[1].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[6].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[4].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_berd7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[2].text
@@ -161,7 +161,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[3].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[6].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[3].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[12].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[10].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_berd7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[4].text
@@ -175,7 +175,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[5].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[10].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[5].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[18].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[16].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_berd7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[6].text
@@ -214,7 +214,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[1].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[2].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[1].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[6].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[4].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_iskit7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[2].text
@@ -228,7 +228,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[3].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[6].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[3].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[12].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[10].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_iskit7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[4].text
@@ -242,7 +242,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[5].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[10].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[5].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[18].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[16].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_iskit7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[6].text
@@ -281,7 +281,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[1].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[2].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[1].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[6].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[4].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_mich7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[2].text
@@ -295,7 +295,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[3].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[6].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[3].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[12].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[10].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_mich7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[4].text
@@ -309,7 +309,7 @@ def send_text(message):
             t_temp = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--temperature--1kVVp')[5].text
             t_sky = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--extendedData--307Ax')[10].text
             t_rain = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--precip--1a98O')[5].text
-            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[18].text
+            t_wind = el.select('._-_-components-src-atom-WeatherData-Wind-Wind--windWrapper--3Ly7c')[16].text
             bot.send_message(message.chat.id, t_tod + ' Темп:' + t_temp + ' ' + t_sky + CLOUD + t_rain + ' ' + t_wind)
         for el in soup_mich7.select('._-_-components-src-organism-DailyForecast-DailyForecast--DisclosureList--nosQS'):
             t_tod = el.select('._-_-components-src-molecule-DaypartDetails-DetailsSummary-DetailsSummary--daypartName--kbngc')[6].text
