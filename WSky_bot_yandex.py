@@ -21,6 +21,11 @@ def send_text(message):
     if message.text == 'Новосибирск':
         for el in soup.select('.fact__temp'):
             t_now = el.select('.temp__value')[0].text
-        bot.send_message(message.chat.id,  'Текущая температура: ' + t_now)
+        for el in soup.select('.link__feelings'):
+            t_sky = el.select('.link__condition')[0].text
+            t_sen = el.select('.term__label')[0].text
+            t_now_sen = el.select('.temp__value')[0].text
+        bot.send_message(message.chat.id,  'Текущая температура: ' + t_now + ' ' + t_sky + 
+            '\n' + t_sen + ': ' + t_now_sen)
 
 bot.polling()
